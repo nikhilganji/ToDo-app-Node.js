@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ToDO App</title>
+
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <link href = "/assets/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<a href ="/" >Home </a><br>
+<br>
+<img class="omnitrixLogo" src="/assets/omnitixLogo.jpg" ></img> <br>
+<div class="todo-table">
+    <form>
+        <input type="text" name="item" placeholder="Add new item" required>
+        <button type="submit">Add Item</button><br><br><br>
+    </form>
+
+    <ul>
+        <% for(var i=0; i<todos.length;i++){%>
+        <li><%= todos[i].item %></li>
+        <% } %>
+    </ul>
+
+</div>
+<script src ="/assets/todo-list.js"></script>
+</body>
+</html>

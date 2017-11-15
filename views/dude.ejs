@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="cssFiles/styles.css">
+    <!--<script type="text/javascript">
+        setTimeout(function(){
+            window.location.href = "https://i.ytimg.com/vi/TzLnbt15uuU/maxresdefault.jpg"; // this will redirect the page to facebook in 5 seconds.
+        }, 4000);
+
+    </script>-->
+</head>
+<body>
+<% include partials/nav.ejs %>
+
+<p>
+<h1> <b> CONTACT US</b></h1>
+<h1> Dude</h1>
+<p>Whatsupp Dude..!!</p>
+
+<form id="contact-form" method="POST" action="/dude">
+    <label for="who"> Whom do you want to contact? </label><br>
+    <input type="text" name="who" value="<%=qs.person %>" required><br><br>
+    <label for="department"> Which department? </label><br>
+    <input type="text" name="department" value="<%= qs.dept %>" required><br><br>
+    <label for="email"> Your Email</label><br>
+    <input type="email" name="email" required><br><br>
+    <input type="submit" value="submit">
+</form>
+
+
+
+</body>
+</html>

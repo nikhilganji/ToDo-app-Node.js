@@ -1,0 +1,17 @@
+body{ background-color: darkolivegreen; font-family: "Comic Sans MS"; color: crimson; padding:30px;}
+h1{
+    text-align: center;
+    color: crimson;
+    text-shadow: 3px 3px 8px black;
+}
+p{
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px 3px black ;
+}
+
+#contact-form{
+    color: yellow;
+    text-shadow: 1px 1px 2px black ;
+}
+
